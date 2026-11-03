@@ -1,14 +1,14 @@
 
-
 {
-    "engines": {
-    "node": "v25.1.0"
+  "engines": {
+    "node": "22.x"
   },
   "name": "airbnb",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Wanderlust - Airbnb Clone",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -38,3 +38,4 @@
     "passport-mongoose": "^0.0.1"
   }
 }
+
