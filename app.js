@@ -95,10 +95,12 @@ app.use((req, res, next) => {
     next();
 });
 
-// Application routes
-app.get("/",(req,res)=>{
- res.render("show.ejs");
+// Homepage redirect
+app.get("/", (req, res) => {
+    res.redirect(302, "/listings");
 });
+
+// Application routes
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
