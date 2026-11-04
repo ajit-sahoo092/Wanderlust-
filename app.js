@@ -96,6 +96,9 @@ app.use((req, res, next) => {
 });
 
 // Application routes
+app.get("/",(req,res)=>{
+ res.render("show.ejs");
+});
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
